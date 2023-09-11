@@ -264,7 +264,12 @@ display: none;
 
 function TipTap () {
   return (
-    <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content}></EditorProvider>
+    <EditorProvider
+      slotBefore={<MenuBar />}
+      extensions={extensions}
+      content={content}
+      onUpdate={(e) => console.log(e.editor.getHTML())}
+    />
   )
 }
 
