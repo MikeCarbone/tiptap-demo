@@ -1,0 +1,86 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Container for the editor */
+.tiptap-editor {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+/* Editor content area */
+.tiptap-editor .ProseMirror {
+  padding: 10px;
+}
+
+/* Editor toolbar */
+.tiptap-menu {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Toolbar button styles */
+.tiptap-menu button {
+  background-color: transparent;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin: 0 4px;
+  padding: 4px 8px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+.tiptap-menu button:hover {
+  background-color: #eaeaea;
+}
+
+.tiptap-menu button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+/* Active toolbar button styles */
+.tiptap-menu button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Placeholder text styles */
+.tiptap-placeholder {
+  color: #888;
+}
+
+/* Selected text styles */
+.tiptap-selected {
+  background-color: #cce5ff;
+}
+
+/* Link styles */
+a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
